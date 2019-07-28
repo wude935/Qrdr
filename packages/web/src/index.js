@@ -6,8 +6,8 @@ import * as serviceWorker from './serviceWorker';
 AppRegistry.registerComponent('App', () => App);
 
 AppRegistry.runApplication('App', {
-	initialProps: {},
-	rootTag: document.getElementById('root')
+  initialProps: {},
+  rootTag: document.getElementById('root')
 });
 
 // If you want your app to work offline and load faster, you can change
