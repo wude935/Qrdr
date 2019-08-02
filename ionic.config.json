@@ -1,0 +1,7 @@
+{
+  "name": "qrdr",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
