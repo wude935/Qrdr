@@ -1,0 +1,88 @@
+<!--Lists all sections in the menu-->
+<ion-list
+  *ngFor="let section of menu; let i = index"
+  class="menu-list"
+  lines="full"
+  detail="false"
+>
+  <ion-item
+    tappable
+    (click)="toggleSection(i)"
+    [ngClass]="{
+      'section-active': section.open,
+      'section-inactive': !section.open
+    }"
+  >
+    <ion-icon slot="start" name="arrow-forward" *ngIf="!section.open">
+    </ion-icon>
+    <ion-icon slot="start" name="arrow-down" *ngIf="section.open"> </ion-icon>
+    <ion-label>
+      {{ section.name }}
+    </ion-label>
+  </ion-item>
+
+  <div *ngIf="section.children && section.open">
+    <p
+      *ngIf="section.sectionDescription"
+      text-center
+      style="color: var(--ion-color-medium)"
+    >
+      {{ section.sectionDescription }}
+    </p>
+    <!--Lists all subsections in the section if there are any.-->
+    <ion-list
+      *ngFor="let child of section.children; let j = index"
+      lines="full"
+      class="child-list"
+    >
+      <ion-item
+        tappable
+        (click)="toggleMenuItem(i, j)"
+        *ngIf="child.children"
+        [ngClass]="{
+          'subsection-active': child.open,
+          'subsection-inactive': !child.open
+        }"
+      >
+        <ion-icon slot="start" name="add" *ngIf="!child.open"> </ion-icon>
+        <ion-icon slot="start" name="close" *ngIf="child.open"> </ion-icon>
+        <ion-label>
+          {{ child.name }}
+        </ion-label>
+      </ion-item>
+      <div *ngIf="child.children && child.open">
+        <p
+          *ngIf="child.subSectionDescription"
+          text-center
+          style="color: var(--ion-color-medium)"
+        >
+          {{ child.subSectionDescription }}
+        </p>
+        <!--Lists menu items within the subsection.-->
+        <ion-list
+          *ngFor="let menuItem of child.children"
+          lines="inset"
+          class="menu-item-list"
+        >
+          <ion-item *ngIf="child.children && child.open">
+            <app-menu-item [menuItem]="menuItem"></app-menu-item>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-list>
+    <!--If there are no subsections, it lists menu items within the section if there are any.-->
+    <ion-list
+      *ngFor="let child of section.children"
+      lines="inset"
+      class="menu-item-list"
+    >
+      <ion-item *ngIf="!child.children">
+        <app-menu-item [menuItem]="child"></app-menu-item>
+      </ion-item>
+    </ion-list>
+  </div>
+  <!--If there are no subsections or menu items it displays a sorry message.-->
+  <p *ngIf="section.children.length === 0 && section.open" text-center>
+    Sorry, nothing is in here!
+  </p>
+</ion-list>

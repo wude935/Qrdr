@@ -1,0 +1,55 @@
+{
+  "menu": [
+    {
+      "name": "Appetizers",
+      "children": [
+        {
+          "name": "French Fries",
+          "itemDescription": "Fried potatoes",
+          "price": 2.99
+        },
+        {
+          "name": "Salad",
+          "itemDescription": "Raw greens",
+          "price": 4.99
+        }
+      ]
+    },
+    {
+      "name": "Entrees",
+      "sectionDescription": "Our award-winning entrees",
+      "children": [
+        {
+          "name": "Chicken",
+          "subSectionDescription": "100% Organic Chicken",
+          "children": [
+            {
+              "name": "Chicken Sandwich",
+              "description": "Fried chicken and bread",
+              "price": 5.99
+            }
+          ]
+        },
+        {
+          "name": "Beef",
+          "children": [
+            {
+              "name": "Hamburger",
+              "description": "Ground beef and bread",
+              "price": 6.99
+            },
+            {
+              "name": "Cheeseburger",
+              "description": "Cheese, ground beef, and bread",
+              "price": 7.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desserts",
+      "children": []
+    }
+  ]
+}
