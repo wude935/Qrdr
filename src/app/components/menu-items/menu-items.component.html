@@ -1,0 +1,30 @@
+<div *ngFor="let menuItem of menuItems.children" class="menu-item-loop">
+  <div *ngIf="menuItem.type === 'item'" class="menu-item-wrapper">
+    <ion-item class="menu-item">
+      <ion-grid class="item-grid">
+        <ion-row nowrap>
+          <ion-col class="item-content-column" size="11" align-items-center>
+            <ion-row class="item-content-row">
+              <ion-col size="9">
+                <ion-label class="name-label">{{ menuItem.name }}</ion-label>
+              </ion-col>
+              <ion-col class="price-column" size="3">
+                <ion-label class="price-label">${{ menuItem.price }}</ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row *ngIf="menuItem.description" class="description-row">
+              <ion-label class="description-label">{{
+                menuItem.description
+              }}</ion-label>
+            </ion-row>
+          </ion-col>
+          <ion-col class="add-button-column" size="1">
+            <ion-button class="add-button">
+              <ion-icon class="add-icon" name="add"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </div>
+</div>

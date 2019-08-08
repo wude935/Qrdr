@@ -2,12 +2,12 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ToastController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-menu-item',
-  templateUrl: './menu-item.component.html',
-  styleUrls: ['./menu-item.component.scss']
+  selector: 'app-menu-items',
+  templateUrl: './menu-items.component.html',
+  styleUrls: ['./menu-items.component.scss']
 })
-export class MenuItemComponent implements OnInit {
-  @Input() menuItem: any;
+export class MenuItemsComponent implements OnInit {
+  @Input() menuItems: any;
 
   constructor(private addCartToast: ToastController) {}
 

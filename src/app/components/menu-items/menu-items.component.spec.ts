@@ -1,22 +1,20 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MenuItemsComponent } from './menu-items.component';
 
-import { MenuItemComponent } from './menu-item.component';
-
-describe('MenuItemComponent', () => {
-  let component: MenuItemComponent;
-  let fixture: ComponentFixture<MenuItemComponent>;
+describe('MenuItemsComponent', () => {
+  let component: MenuItemsComponent;
+  let fixture: ComponentFixture<MenuItemsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MenuItemComponent ],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-    .compileComponents();
+      declarations: [MenuItemsComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MenuItemComponent);
+    fixture = TestBed.createComponent(MenuItemsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

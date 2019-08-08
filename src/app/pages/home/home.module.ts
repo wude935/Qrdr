@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
+import { MenuItemsComponent } from '../../components/menu-items/menu-items.component';
 import { MenuListComponent } from '../../components/menu-list/menu-list.component';
-import { MenuItemComponent } from './../../components/menu-item/menu-item.component';
+import { SharedComponentsModule } from './../../components/sharedcomponents/shared-components.module';
 import { HomePage } from './home.page';
 
 @NgModule({
   imports: [
+    SharedComponentsModule,
     CommonModule,
     FormsModule,
     IonicModule,
@@ -19,6 +21,6 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage, MenuListComponent, MenuItemComponent]
+  declarations: [HomePage, MenuListComponent, MenuItemsComponent]
 })
 export class HomePageModule {}
