@@ -1,12 +1,33 @@
 .cart-fab {
   position: absolute;
+  margin-block-end: 25px;
+}
+
+.cart-button {
+  width: 75px;
+  height: 75px;
+}
+
+.cart-icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
   overflow: visible;
-  margin-block-end: 30px;
 }
 
 .cart-badge {
+  margin: auto;
   border-radius: 50%;
   position: relative;
-  bottom: 60px;
-  left: 35px;
+  bottom: 14px;
+  left: 16px;
+  padding: 3px;
+}
+
+.badge-number {
+  display: flex;
+  height: 15px;
+  width: 15px;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,8 +1,12 @@
-<ion-footer>
-  <ion-fab class="cart-fab" vertical="bottom" horizontal="center">
-    <ion-fab-button>
-      <ion-icon class="cart-icon" name="cart"></ion-icon>
-    </ion-fab-button>
-    <ion-badge class="cart-badge" color="danger">11 </ion-badge>
-  </ion-fab>
-</ion-footer>
+<ion-fab class="cart-fab" vertical="bottom" horizontal="center">
+  <ion-fab-button class="cart-button" (click)="this.showCart()">
+    <ion-icon class="cart-icon" name="cart"></ion-icon>
+    <ion-badge
+      *ngIf="this.cart$.value.length > 0"
+      class="cart-badge"
+      color="danger"
+    >
+      <div class="badge-number">{{ getBadgeNumber() }}</div>
+    </ion-badge>
+  </ion-fab-button>
+</ion-fab>

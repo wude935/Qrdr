@@ -19,7 +19,10 @@
             </ion-row>
           </ion-col>
           <ion-col class="add-button-column" size="1">
-            <ion-button class="add-button">
+            <ion-button
+              class="add-button"
+              (click)="this.cart.addCart(menuItem)"
+            >
               <ion-icon class="add-icon" name="add"></ion-icon>
             </ion-button>
           </ion-col>

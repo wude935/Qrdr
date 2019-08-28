@@ -6,13 +6,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="home-content" #scrollArea [scrollEvents]="true">
+  <app-menu-list></app-menu-list>
+  <!-- <app-menu-list></app-menu-list>
   <app-menu-list></app-menu-list>
   <app-menu-list></app-menu-list>
   <app-menu-list></app-menu-list>
   <app-menu-list></app-menu-list>
-  <app-menu-list></app-menu-list>
-  <app-menu-list></app-menu-list>
-  <app-menu-list></app-menu-list>
+  <app-menu-list></app-menu-list> -->
 </ion-content>
-<app-cart-fab></app-cart-fab>
+
+<ion-footer>
+  <app-cart-fab
+    class="cart-fab"
+    [appHideFab]="scrollArea"
+    fabClass="cart-fab"
+  ></app-cart-fab>
+</ion-footer>

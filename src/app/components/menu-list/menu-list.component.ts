@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
-//Expandable list that allows users to select a menu item from a menu defined in the array in 'test.json.'
+//Expandable list that allows users to select a menu item from a menu.
 //Users can tap the menu item to go to 'details' page or tap the add button to add the menu item to the cart.
+//Menu is retrieved from /assets/test.json.
 
 @Component({
   selector: 'app-menu-list',

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ToastController } from '@ionic/angular';
+import { CartService } from './../../services/cart.service';
 
 @Component({
   selector: 'app-menu-items',
@@ -9,14 +9,7 @@ import { ToastController } from '@ionic/angular';
 export class MenuItemsComponent implements OnInit {
   @Input() menuItems: any;
 
-  constructor(private addCartToast: ToastController) {}
+  constructor(private cart: CartService) {}
 
   ngOnInit() {}
-
-  async addCart(menuItem) {
-    let toast = await this.addCartToast.create({
-      message: `Item added to cart: ${menuItem.name}`
-    });
-    toast.present();
-  }
 }
