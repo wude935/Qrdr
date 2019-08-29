@@ -13,7 +13,6 @@ import { CartService } from './services/cart.service';
 
 @NgModule({
   declarations: [AppComponent],
-  entryComponents: [],
   imports: [
     CartPageModule,
     BrowserModule,

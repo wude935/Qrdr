@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 import { MenuItemsComponent } from '../../components/menu-items/menu-items.component';
 import { MenuListComponent } from '../../components/menu-list/menu-list.component';
 import { SharedComponentsModule } from './../../components/sharedcomponents/shared-components.module';
+//import { CartPageModule } from './../cart/cart.module';
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -21,6 +22,12 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage, MenuListComponent, MenuItemsComponent]
+  declarations: [
+    HomePage,
+    MenuListComponent,
+    MenuItemsComponent
+    //CartPageModule
+  ]
+  //entryComponents: [CartPageModule]
 })
 export class HomePageModule {}

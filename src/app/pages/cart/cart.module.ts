@@ -20,6 +20,7 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   declarations: [CartPage],
-  exports: [CartPage]
+  exports: [CartPage],
+  entryComponents: [CartPage]
 })
 export class CartPageModule {}

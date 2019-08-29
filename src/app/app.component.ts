@@ -28,6 +28,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.cartService.initializeCart();
-    console.log('APP INIIT');
+    //console.log('APP INIIT');
   }
 }

@@ -8,6 +8,19 @@
   --color: var(--ion-color-primary);
 }
 
+.edit-button {
+  width: 25px;
+  height: 25px;
+  --border-radius: 50%;
+  --padding-start: 0px;
+  --padding-end: 0px;
+}
+
+.edit-icon {
+  --width: 100%;
+  --height: 100%;
+}
+
 .price-label {
   text-align: right;
 }

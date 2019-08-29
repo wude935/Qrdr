@@ -33,4 +33,15 @@ export class CartService {
     });
     toast.present();
   }
+
+  removeCart(id) {
+    let newCart = [...this.cart$.value];
+    newCart = newCart.filter((value, index) => {
+      return index != id;
+    });
+    newCart.forEach((item, index) => {
+      item.id = index;
+    });
+    this.cart$.next(newCart);
+  }
 }
