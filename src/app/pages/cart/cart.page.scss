@@ -1,7 +1,6 @@
 .cart-item-list {
-  padding-right: 15px;
   padding-left: 15px;
-  margin: 0px;
+  padding-right: 15px;
 }
 
 .name-label {
@@ -11,4 +10,14 @@
 
 .price-label {
   text-align: right;
+}
+
+.button-view {
+  position: fixed;
+  height: 10%;
+}
+
+.checkout-button {
+  padding-left: 15px;
+  padding-right: 15px;
 }

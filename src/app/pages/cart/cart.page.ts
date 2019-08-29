@@ -16,13 +16,23 @@ export class CartPage implements OnInit {
   private cart$ = this.cart.cart$;
 
   closeCart() {
-    console.log('RUN');
     this.modalController.dismiss({
       dismissed: true
     });
   }
 
-  ngOnInit() {
-    console.log('CART INIT');
+  ngOnInit() {}
+
+  cartCost() {
+    let sum = 0;
+    this.cart$.value.forEach(item => {
+      sum += item.price;
+    });
+    return sum;
+  }
+
+  //INSERT FIREBASE CODE HERE
+  checkout() {
+    alert('Checked Out!');
   }
 }

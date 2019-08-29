@@ -13,6 +13,7 @@ import { Component, OnInit } from '@angular/core';
 export class MenuListComponent implements OnInit {
   menu: any[];
 
+  //INSERT FIREBASE CODE HERE
   constructor(private http: HttpClient) {
     this.http.get('assets/test.json').subscribe(result => {
       this.menu = result['menu'];
