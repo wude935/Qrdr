@@ -14,12 +14,12 @@ import { CartService } from './services/cart.service';
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    CartPageModule,
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(),
     IonicStorageModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    CartPageModule
   ],
   providers: [
     StatusBar,

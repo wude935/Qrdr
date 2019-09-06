@@ -55,7 +55,6 @@ export class HideFabDirective implements OnInit {
 
     this.scrollArea.ionScroll.subscribe(scrollEvent => {
       let deltaY = scrollEvent.detail.deltaY;
-      //console.log(deltaY);
       //Changes scrolling variables when scrolling down
       if (deltaY > this.triggerDistance) {
         this.scrollingDown = true;
@@ -116,7 +115,7 @@ export class HideFabDirective implements OnInit {
             'forwards'
           );
         });
-      }, 1500);
+      }, 1000);
     }
   }
 }

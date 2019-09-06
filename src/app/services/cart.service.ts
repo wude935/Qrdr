@@ -27,7 +27,7 @@ export class CartService {
     this.cart$.next(newCart);
     let toast = await this.toastController.create({
       message: `Item added to cart: ${menuItem.name}`,
-      duration: 2000,
+      duration: 1000,
       position: 'top',
       showCloseButton: true
     });

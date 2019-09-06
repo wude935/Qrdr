@@ -28,7 +28,7 @@ export class CartPage implements OnInit {
     this.cart$.value.forEach(item => {
       sum += item.price;
     });
-    return sum;
+    return sum.toFixed(2);
   }
 
   //INSERT FIREBASE CODE HERE

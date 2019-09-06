@@ -11,13 +11,21 @@
   }
 }
 
-.item-content-column {
-  padding-right: 10px;
+.menu-item {
+  height: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px;
 }
 
 .item-grid {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.item-content-column {
+  padding-right: 10px;
 }
 
 .name-label {

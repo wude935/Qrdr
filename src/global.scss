@@ -53,10 +53,19 @@ ion-col,
 ion-row,
 ion-grid {
   margin: auto;
+}
+
+ion-col,
+ion-row {
   padding: 0px;
 }
 
 ion-item {
   --inner-padding-end: 0px;
   --padding-start: 0;
+}
+
+.list-md,
+.list-ios {
+  padding: 0px;
 }

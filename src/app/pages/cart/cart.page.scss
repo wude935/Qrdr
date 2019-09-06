@@ -1,6 +1,31 @@
-.cart-item-list {
+.cart-item-loop {
+  .cart-item-wrapper {
+    border-top: 1px solid var(--ion-color-medium);
+    --inner-padding-end: 0px;
+  }
+}
+
+.cart-item-loop:first-child {
+  .cart-item-wrapper {
+    border-top: 0px;
+  }
+}
+
+.cart-item {
+  height: 100%;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0px;
+}
+
+.item-grid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cart-item-wrapper {
+  border-top: 1px solid var(--ion-color-medium);
 }
 
 .name-label {

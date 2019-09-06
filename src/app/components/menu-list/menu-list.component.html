@@ -56,7 +56,9 @@
         <!--If there are no subsections, it lists menu items within the section if there are any.-->
         <div>
           <ion-list class="menu-item-list" lines="none">
-            <app-menu-items [menuItems]="child"></app-menu-items>
+            <div class="ion-activatable">
+              <app-menu-items [menuItems]="child"></app-menu-items>
+            </div>
           </ion-list>
         </div>
       </ion-list>
