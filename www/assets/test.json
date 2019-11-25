@@ -1,0 +1,64 @@
+{
+  "menu": [
+    {
+      "type": "section",
+      "name": "Appetizers",
+      "children": [
+        {
+          "type": "item",
+          "name": "French Fries",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": 2.99
+        },
+        {
+          "type": "item",
+          "name": "Salad",
+          "price": 4.99
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "name": "Entrees",
+      "description": "Our award-winning entrees",
+      "children": [
+        {
+          "type": "subsection",
+          "name": "Chicken",
+          "description": "100% Organic Chicken",
+          "children": [
+            {
+              "type": "item",
+              "name": "Chicken Sandwich",
+              "description": "Fried chicken and bread",
+              "price": 5.99
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "name": "Beef",
+          "children": [
+            {
+              "type": "item",
+              "name": "Hamburger",
+              "description": "Ground beef and bread",
+              "price": 6.99
+            },
+            {
+              "type": "item",
+              "name": "Cheeseburger",
+              "description": "Cheese, ground beef, and bread",
+              "price": 7.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "name": "Desserts",
+      "children": []
+    }
+  ]
+}
