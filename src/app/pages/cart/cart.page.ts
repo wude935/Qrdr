@@ -3,36 +3,36 @@ import { ModalController } from '@ionic/angular';
 import { CartService } from './../../services/cart.service';
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.page.html',
-  styleUrls: ['./cart.page.scss']
+	selector: 'app-cart',
+	templateUrl: './cart.page.html',
+	styleUrls: ['./cart.page.scss']
 })
 export class CartPage implements OnInit {
-  constructor(
-    private cart: CartService,
-    private modalController: ModalController
-  ) {}
+	constructor(
+		private cart: CartService,
+		private modalController: ModalController
+	) {}
 
-  private cart$ = this.cart.cart$;
+	public cart$ = this.cart.cart$;
 
-  closeCart() {
-    this.modalController.dismiss({
-      dismissed: true
-    });
-  }
+	closeCart() {
+		this.modalController.dismiss({
+			dismissed: true
+		});
+	}
 
-  ngOnInit() {}
+	ngOnInit() {}
 
-  cartCost() {
-    let sum = 0;
-    this.cart$.value.forEach(item => {
-      sum += item.price;
-    });
-    return sum.toFixed(2);
-  }
+	cartCost() {
+		let sum = 0;
+		this.cart$.value.forEach(item => {
+			sum += item.price;
+		});
+		return sum.toFixed(2);
+	}
 
-  //INSERT FIREBASE CODE HERE
-  checkout() {
-    alert('Checked Out!');
-  }
+	//INSERT FIREBASE CODE HERE
+	checkout() {
+		alert('Checked Out!');
+	}
 }
