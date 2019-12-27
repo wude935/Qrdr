@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { CartPage } from './../../../pages/cart/cart.page';
-import { CartService } from './../../../services/cart.service';
+import { CartPage } from '../../../pages/cart/cart.page';
+import { CartService } from '../../../services/cart.service';
 
 @Component({
 	selector: 'app-cart-fab',

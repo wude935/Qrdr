@@ -4,8 +4,6 @@
 	"author": "Ionic Framework",
 	"homepage": "https://ionicframework.com/",
 	"scripts": {
-		"ionic:build": "ionic-app-scripts build",
-		"ionic:serve": "ionic-app-scripts serve",
 		"ng": "ng",
 		"start": "ng serve",
 		"build": "ng build",

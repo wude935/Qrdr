@@ -1,19 +1,15 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Old Sport Bar and Grill
-    </ion-title>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-title>
+			Old Sport Bar and Grill
+		</ion-title>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content class="home-content" #scrollArea [scrollEvents]="true">
-  <app-menu-list></app-menu-list>
+	<app-menu-list></app-menu-list>
 </ion-content>
 
 <ion-footer>
-  <app-cart-fab
-    class="cart-fab"
-    [appHideFab]="scrollArea"
-    fabClass="cart-fab"
-  ></app-cart-fab>
+	<app-cart-fab [appHideFab]="scrollArea" fabClass="cart-fab"> </app-cart-fab>
 </ion-footer>
